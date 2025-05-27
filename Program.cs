@@ -33,8 +33,6 @@ float num1, num2;
 int opcion;
 do
 {
-    int aux = 1;
-
     Console.WriteLine("\nCalculadora V1 \n\n[1] SUMA \n[2] RESTA \n[3] MULTIPLICACION \n[4] DIVISION \n[0] SALIR DEL PROGRAMA");
     Console.WriteLine("\n Su opcion:");
     opcion = ingresarNumeroInt();
@@ -71,7 +69,6 @@ do
             Console.WriteLine("\nOpcion invalida (opcion): " + opcion);
             break;
     }
-    aux = 1;
 } while (opcion != 0);
 
 float ingresarNumeroFloat()
