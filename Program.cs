@@ -29,11 +29,11 @@ using System.Diagnostics;
 using Microsoft.VisualBasic;
 
 float num1, num2;
-
+double grados,radianes;
 int opcion;
 do
 {
-    Console.WriteLine("\nCalculadora V1 \n\n[1] SUMA \n[2] RESTA \n[3] MULTIPLICACION \n[4] DIVISION \n[0] SALIR DEL PROGRAMA");
+    Console.WriteLine("\nCalculadora V1 \n\n[1] SUMA \n[2] RESTA \n[3] MULTIPLICACION \n[4] DIVISION \n[5] VALOR ABSOLUTO \n[6] VALOR AL CUADRADO \n[7] RAIZ CUADRADA \n[8] SENO \n[9] COSENO \n[10] PARTE ENTERA \n[0] SALIR DEL PROGRAMA");
     Console.WriteLine("\n Su opcion:");
     opcion = ingresarNumeroInt();
     switch (opcion)
@@ -62,6 +62,40 @@ do
             num2 = ingresarNumeroFloat();
             Console.WriteLine("\n El resultado de la division es: " + (num1 / num2));
             break;
+         case 5:
+            Console.WriteLine("\nVALOR ABSOLUTO");        
+            num1 = ingresarNumeroFloat();
+            Console.WriteLine("\n El resultado del valor absoluto "+ num1 + " es " + Math.Abs(num1));
+            break;
+         case 6:
+            Console.WriteLine("\nVALOR AL CUADRADO");        
+            num1 = ingresarNumeroFloat();
+            Console.WriteLine("\n El resultado "+ num1 + " elevado al cuadrado es " + Math.Pow(num1,2));
+            break;
+         case 7:
+            Console.WriteLine("\nRAIZ CUADRADA");        
+            num1 = ingresarNumeroFloat();
+            Console.WriteLine("\n El resultado de la raiz cuadrada de  "+ num1 + " es " + Math.Sqrt(num1));
+            break;
+         case 8:
+            Console.WriteLine("\nSENO (ingresar grados)");        
+            num1 = ingresarNumeroFloat();
+            grados = Convert.ToDouble(num1);
+            radianes = grados * (Math.PI / 180);
+            Console.WriteLine("\n El seno de "+ num1 + "° es " + Math.Sin(radianes));
+            break;
+         case 9:
+            Console.WriteLine("\nCOSENO (ingresar grados)");        
+            num1 = ingresarNumeroFloat();
+            grados = Convert.ToDouble(num1);
+            radianes = grados * (Math.PI / 180);
+            Console.WriteLine("\n El coseno de "+ num1 + "° es " + Math.Cos(radianes));
+            break;
+         case 10:
+            Console.WriteLine("\nPARTE ENTERA");        
+            num1 = ingresarNumeroFloat();
+            Console.WriteLine("\n La parte entera de "+ num1 + " es " + Math.Floor(num1));
+            break;                                                                   
         case 0:
 
             break;
@@ -97,9 +131,8 @@ int ingresarNumeroInt()
     string entrada;
     do
     {
-
         entrada = Console.ReadLine();
-        if (int.TryParse(entrada, out opcion)) // Intenta convertir a entero
+        if (int.TryParse(entrada, out opcion)) 
         {
             return opcion;
         }
@@ -109,5 +142,4 @@ int ingresarNumeroInt()
             opcion = -1;
         }
     } while (true);
-
 }
