@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("tl1-tp6-2025-ColmanNicolas")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+833bb535eeb55ebd73963be22477318f1cab1ce0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+234b08bba088f9e6159efb21c1b5a334c95399b6")]
 [assembly: System.Reflection.AssemblyProductAttribute("tl1-tp6-2025-ColmanNicolas")]
 [assembly: System.Reflection.AssemblyTitleAttribute("tl1-tp6-2025-ColmanNicolas")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

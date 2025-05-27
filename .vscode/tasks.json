@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/tl1-tp6-2025-ColmanNicolas.sln",
+                "${workspaceFolder}/tl1-tp6-2025-ColmanNicolas.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary;ForceNoAlign"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/tl1-tp6-2025-ColmanNicolas.sln",
+                "${workspaceFolder}/tl1-tp6-2025-ColmanNicolas.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary;ForceNoAlign"
             ],
@@ -33,7 +33,7 @@
                 "watch",
                 "run",
                 "--project",
-                "${workspaceFolder}/tl1-tp6-2025-ColmanNicolas.sln"
+                "${workspaceFolder}/tl1-tp6-2025-ColmanNicolas.csproj"
             ],
             "problemMatcher": "$msCompile"
         }
