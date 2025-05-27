@@ -100,10 +100,14 @@ do
 
             break;
         default:
-            Console.WriteLine("\nOpcion invalida (opcion): " + opcion);
+            Console.WriteLine("\nOpcion invalida");
             break;
     }
 } while (opcion != 0);
+
+
+determinarMaxMin();
+
 
 float ingresarNumeroFloat()
 {
@@ -142,4 +146,19 @@ int ingresarNumeroInt()
             opcion = -1;
         }
     } while (true);
+}
+
+void determinarMaxMin(){
+    Console.WriteLine("Ingrese dos numero para comparar");
+    num1 = ingresarNumeroFloat();
+    num2 = ingresarNumeroFloat();
+
+    if (num1>num2)
+    {
+        Console.WriteLine("el numero "+ num1+ " es el maximo");
+    }else if(num2>num1){
+        Console.WriteLine("el numero "+ num2+ " es el maximo");
+    }else{
+        Console.WriteLine("los numeros ingresados son iguales");
+    }
 }
