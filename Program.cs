@@ -27,7 +27,7 @@ if (numeroEntero > 0)
 
 using System.Diagnostics;
 using Microsoft.VisualBasic;
-
+/*
 float num1, num2;
 double grados,radianes;
 int opcion;
@@ -162,3 +162,23 @@ void determinarMaxMin(){
         Console.WriteLine("los numeros ingresados son iguales");
     }
 }
+
+*/
+
+// EJERCICIO 4 
+
+Console.WriteLine("\nIngrese una cadena de texto");
+string cadena = Console.ReadLine();
+int largoCadena;
+Console.WriteLine("\n\nCadena ingresada: *"+cadena+"*");
+largoCadena = cadena.Length;
+Console.WriteLine("\nLargo de cadena: "+ largoCadena);
+
+Console.WriteLine("\nIngrese otra cadena de texto");
+string cadena2 = Console.ReadLine();
+
+Console.WriteLine("\ncadenas concatenadas: "+ $"{cadena} - ${cadena2}");
+
+Console.WriteLine("\nsubcadena de la primera cadena de texto: "+ cadena.Substring(3,largoCadena) );
+
+
