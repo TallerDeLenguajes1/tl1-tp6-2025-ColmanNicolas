@@ -193,3 +193,33 @@ Console.WriteLine($"\nRecorro la cadena1: {cadena}");
 foreach (char elemento in cadena){
     Console.WriteLine(elemento);
 }
+
+Console.WriteLine("Ingrese la palabra a buscar:");
+string palabra = Console.ReadLine();
+
+if (cadena.Contains(palabra))
+{
+    Console.WriteLine($"La palabra \"{palabra}\" se encuentra en la cadena.");
+}
+else
+{
+    Console.WriteLine($"La palabra \"{palabra}\" NO se encuentra en la cadena.");
+}
+
+Console.WriteLine("\nCadena en mayúsculas: " + cadena.ToUpper());
+Console.WriteLine("Cadena en minúsculas: " + cadena.ToLower());
+
+Console.WriteLine("\nIngrese una cadena separada por un carácter:");
+string separada = Console.ReadLine();
+
+Console.WriteLine("Ingrese el carácter separador:");
+char separador = Console.ReadLine()[0]; 
+
+string[] partes = separada.Split(separador);
+
+Console.WriteLine("\nPartes obtenidas:");
+foreach (string parte in partes)
+{
+    Console.WriteLine(parte);
+}
+
