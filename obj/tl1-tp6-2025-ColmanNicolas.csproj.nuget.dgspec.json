@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alumno\\Desktop\\TP6\\tl1-tp6-2025-ColmanNicolas\\tl1-tp6-2025-ColmanNicolas.csproj": {}
+    "C:\\Users\\user\\Desktop\\Facultad\\tl1-tp6-2025-ColmanNicolas\\tl1-tp6-2025-ColmanNicolas.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alumno\\Desktop\\TP6\\tl1-tp6-2025-ColmanNicolas\\tl1-tp6-2025-ColmanNicolas.csproj": {
+    "C:\\Users\\user\\Desktop\\Facultad\\tl1-tp6-2025-ColmanNicolas\\tl1-tp6-2025-ColmanNicolas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alumno\\Desktop\\TP6\\tl1-tp6-2025-ColmanNicolas\\tl1-tp6-2025-ColmanNicolas.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\Facultad\\tl1-tp6-2025-ColmanNicolas\\tl1-tp6-2025-ColmanNicolas.csproj",
         "projectName": "tl1-tp6-2025-ColmanNicolas",
-        "projectPath": "C:\\Users\\Alumno\\Desktop\\TP6\\tl1-tp6-2025-ColmanNicolas\\tl1-tp6-2025-ColmanNicolas.csproj",
-        "packagesPath": "C:\\Users\\Alumno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alumno\\Desktop\\TP6\\tl1-tp6-2025-ColmanNicolas\\obj\\",
+        "projectPath": "C:\\Users\\user\\Desktop\\Facultad\\tl1-tp6-2025-ColmanNicolas\\tl1-tp6-2025-ColmanNicolas.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\Facultad\\tl1-tp6-2025-ColmanNicolas\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Alumno\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -39,7 +37,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -55,12 +54,30 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.12, 8.0.12]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[8.0.12, 8.0.12]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.12, 8.0.12]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.12, 8.0.12]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

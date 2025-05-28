@@ -27,8 +27,8 @@ if (numeroEntero > 0)
 
 using System.Diagnostics;
 using Microsoft.VisualBasic;
-/*
 float num1, num2;
+/*
 double grados,radianes;
 int opcion;
 do
@@ -108,14 +108,14 @@ do
 
 determinarMaxMin();
 
-
+*/
 float ingresarNumeroFloat()
 {
     string entrada;
     float num;
     do
     {
-        Console.WriteLine("\nIngrese un número");
+        Console.Write("\nIngrese un número: ");
         entrada = Console.ReadLine();
 
         if (float.TryParse(entrada, out num))
@@ -147,7 +147,7 @@ int ingresarNumeroInt()
         }
     } while (true);
 }
-
+/*
 void determinarMaxMin(){
     Console.WriteLine("Ingrese dos numero para comparar");
     num1 = ingresarNumeroFloat();
@@ -167,7 +167,7 @@ void determinarMaxMin(){
 
 // EJERCICIO 4 
 
-Console.WriteLine("\nIngrese una cadena de texto");
+Console.WriteLine("\nIngrese una cadena de texto(mas de 4 caracteres)");
 string cadena = Console.ReadLine();
 int largoCadena;
 Console.WriteLine("\n\nCadena ingresada: *"+cadena+"*");
@@ -177,8 +177,19 @@ Console.WriteLine("\nLargo de cadena: "+ largoCadena);
 Console.WriteLine("\nIngrese otra cadena de texto");
 string cadena2 = Console.ReadLine();
 
-Console.WriteLine("\ncadenas concatenadas: "+ $"{cadena} - ${cadena2}");
+Console.WriteLine("\ncadenas concatenadas: "+ $"{cadena}-{cadena2}");
 
-Console.WriteLine("\nsubcadena de la primera cadena de texto: "+ cadena.Substring(3,largoCadena) );
+Console.WriteLine($"\nsubcadena de la primera cadena de texto: {cadena.Substring(3)}" );
 
 
+Console.WriteLine("\nIngrese los numeros a sumar");
+num1 = ingresarNumeroFloat();
+num2 = ingresarNumeroFloat();
+float suma = num1 + num2;
+Console.WriteLine($"\nLa suma de {num1.ToString()} + {num2.ToString()} es igual a {suma.ToString()}");
+
+
+Console.WriteLine($"\nRecorro la cadena1: {cadena}");
+foreach (char elemento in cadena){
+    Console.WriteLine(elemento);
+}
